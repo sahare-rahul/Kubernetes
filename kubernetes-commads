@@ -1,0 +1,16 @@
+**POD**
+
+1. kubectl create/apply -f pod.yaml          ---- to creat pod
+2. kubectl get pods                          ---- to check all pod
+3. kubectl get pod -o wide                   ---- to check where pod is running
+4. kubectl decribe pod pod-name              ---- to check details of pods
+5. kubectl delete pod pod-name               ---- to delete pod
+6. kubectl logs -f pod-name                  ---- to check pod logs
+7. kubectl get pods -n namespace-name        ---- to see pods on perticular namespace
+
+      **NAMESPACE**
+7. kubectl create -f namespace.yaml          ---- to create namespace
+8. kubectl get namespace                     ---- to see available namespaces
+9. kubectl describe namespace namespace-name ---- todescribe a namespace
+10. kubectl create -f  deployment.yaml OR configmap.yaml OR secret.yaml OR service.yaml    ---- to creat all same comad used
+
