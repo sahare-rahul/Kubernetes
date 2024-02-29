@@ -48,4 +48,24 @@ spec:
   type: NodePort      # Expose the service on a random NodePort
 
 
+  ##### INGRESS.YAML #####
+
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+spec:
+  rules:
+  - host: example.com  # Replace with your desired domain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: my-service  # here we call upper created service by giving service name.
+            port:
+              number: 80     #this port ,deployment conatiner port and service target port should be same.
+
 
