@@ -60,7 +60,7 @@ spec:
   - host: example.com  # Replace with your desired domain
     http:
       paths:
-      - path: /
+      - path: /app   # we can give any name here like /app /game
         pathType: Prefix
         backend:
           service:
